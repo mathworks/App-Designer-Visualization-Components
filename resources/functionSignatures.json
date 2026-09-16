@@ -1,0 +1,16 @@
+{
+  "_schemaVersion": "1.0.0",
+  "setupPanelWrappedComponents": {
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "componentNames",
+        "type": [
+          "string",
+          "column"
+        ],
+        "purpose": "Names of the registered App Designer components."
+      }
+    ]
+  }
+}
