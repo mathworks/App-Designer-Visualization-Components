@@ -2,3 +2,6 @@
 
 % Test infrastructure
 tests/
+
+% R2026b text exports are distributed separately from the legacy app package
+R2026b/

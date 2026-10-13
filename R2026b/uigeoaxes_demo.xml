@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<MATLABApp schemaVersion='1.0.0' release='R2026b.0' minRelease='R2026b'>
+    <UIFigure name='uigeoaxesDemoAppUIFigure'>
+        <Name>'uigeoaxes Demo App'</Name>
+        <Position>[100 100 760 540]</Position>
+        <Children>
+            <GridLayout name='GridLayout'>
+                <ColumnSpacing>0</ColumnSpacing>
+                <ColumnWidth>{'1x'}</ColumnWidth>
+                <Padding>[12 12 12 12]</Padding>
+                <RowHeight>{'1x', 30}</RowHeight>
+                <RowSpacing>8</RowSpacing>
+                <Children>
+                    <uigeoaxes name='uigeoaxes'>
+                        <Layout>
+                            <Column>1</Column>
+                            <Row>1</Row>
+                        </Layout>
+                        <LongitudeLimits>[-277.154811715481 277.154811715481]</LongitudeLimits>
+                    </uigeoaxes>
+                    <GridLayout name='ControlsGridLayout'>
+                        <ColumnSpacing>8</ColumnSpacing>
+                        <ColumnWidth>{'fit', 160, '1x', 'fit'}</ColumnWidth>
+                        <Layout>
+                            <Column>1</Column>
+                            <Row>2</Row>
+                        </Layout>
+                        <Padding>[0 0 0 0]</Padding>
+                        <RowHeight>{'1x'}</RowHeight>
+                        <RowSpacing>0</RowSpacing>
+                        <Children>
+                            <Label name='BasemapLabel'>
+                                <Layout>
+                                    <Column>1</Column>
+                                    <Row>1</Row>
+                                </Layout>
+                                <Text>'Basemap'</Text>
+                            </Label>
+                            <DropDown name='BasemapDropDown'>
+                                <Items>{'streets-light', 'streets', 'topographic', 'satellite'}</Items>
+                                <Layout>
+                                    <Column>2</Column>
+                                    <Row>1</Row>
+                                </Layout>
+                                <Value>'streets-light'</Value>
+                                <ValueChangedFcn>BasemapDropDownValueChanged</ValueChangedFcn>
+                            </DropDown>
+                            <Button name='ResetViewButton'>
+                                <ButtonPushedFcn>ResetViewButtonPushed</ButtonPushedFcn>
+                                <Layout>
+                                    <Column>4</Column>
+                                    <Row>1</Row>
+                                </Layout>
+                                <Text>'Reset View'</Text>
+                            </Button>
+                        </Children>
+                    </GridLayout>
+                </Children>
+            </GridLayout>
+        </Children>
+    </UIFigure>
+    <RunConfiguration>
+        <StartupFcn>startupFcn</StartupFcn>
+    </RunConfiguration>
+    <AppDetails>
+        <Name>uigeoaxes Demo App</Name>
+        <Version>1.0</Version>
+    </AppDetails>
+    <InternalData>
+        <AppId>6252a8d9-0794-4991-ae3e-ea284d8a9925</AppId>
+    </InternalData>
+    <!-- Thumbnail is used by file previewers. To change how the thumbnail is captured or stored, use the App Details dialog box in App Designer. -->
+    <Thumbnail autoCapture='true'>data:image/jpg;base64,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</Thumbnail>
+</MATLABApp>

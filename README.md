@@ -51,6 +51,42 @@ public properties, and updated programmatically.
 
 ## Setup
 
+Choose the file format for your MATLAB release:
+
+| MATLAB release | Files to use |
+| --- | --- |
+| R2026b or newer | The text versions in [`R2026b/`](R2026b/README.md). |
+| Earlier supported releases | The original `.mlapp` files in this folder. See [MathWorks Products](#mathworks-products) for release and toolbox requirements. |
+
+The R2026b folder contains complete `.m` versions of all 17 custom components
+and 16 demos. The components and four demos use conventional MATLAB class
+exports; edit their code in the MATLAB Editor and use the original `.mlapp`
+files for visual design. The other 12 demos use the native App Designer
+`.m`/`.xml` format. Keep each of those pairs together for both running and
+visual editing. See the [format details](R2026b/README.md#editing-and-file-layout)
+for the four conventional demo exports.
+
+Choose one version per MATLAB session. Restart MATLAB when switching
+versions, and avoid recursively adding this repository with `genpath`.
+MATLAB's Current Folder takes precedence over other folders on the path.
+
+### R2026b Text Versions
+
+Set the `R2026b` folder as MATLAB's Current Folder, then run:
+
+```matlab
+cd("path/to/App-Designer-Visualization-Components/R2026b")
+addpath(pwd)
+componentNames = setupPanelWrappedComponents;
+```
+
+Restart App Designer to refresh the Component Library. Use
+[`R2026b/doc/GettingStarted.m`](R2026b/doc/GettingStarted.m) for the text
+versions, and run demos by their unchanged names, such as `uipolaraxes_demo`.
+See the [R2026b guide](R2026b/README.md) for editing and folder contents.
+
+### Original App Designer Files
+
 1. Download or clone this repository.
 2. In MATLAB, navigate to the repository folder.
 3. Run:
@@ -70,8 +106,10 @@ public properties, and updated programmatically.
 
 ## Getting Started
 
-Open [`doc/GettingStarted.m`](doc/GettingStarted.m) in the MATLAB Live Editor
-for a runnable introduction:
+For the original `.mlapp` versions, open
+[`doc/GettingStarted.m`](doc/GettingStarted.m) in the MATLAB Live Editor for
+a runnable introduction. The corresponding text-version guide is
+[`R2026b/doc/GettingStarted.m`](R2026b/doc/GettingStarted.m).
 
 ```matlab
 open("doc/GettingStarted.m")
@@ -584,15 +622,17 @@ app.uipattern.ShowColorbar = "on";
 app.uipattern.Colormap = turbo(256);
 ```
 
-See `uipattern_demo.mlapp` for a complete App Designer example.
+See `uipattern_demo.mlapp`, or `R2026b/uipattern_demo.m` with its companion
+XML file, for a complete App Designer example.
 
 Most components include a corresponding `*_demo.mlapp` file with a complete
-App Designer example.
+App Designer example and a text version in `R2026b/`.
 
 ## MathWorks Products
 
-Requires MATLAB R2024a or newer. Components marked **MATLAB** in the table
-above have no additional product requirement.
+The original `.mlapp` files require MATLAB R2024a or newer. The text versions
+in `R2026b/` require MATLAB R2026b or newer. Components marked **MATLAB** in
+the table above have no additional product requirement.
 
 Some wrapped functions accept inputs supplied by more than one product. In
 particular, `uismithplot` accepts compatible network-parameter objects from

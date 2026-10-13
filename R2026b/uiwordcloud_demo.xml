@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<MATLABApp schemaVersion='1.0.0' release='R2026b.0' minRelease='R2026b'>
+    <UIFigure name='uiwordcloudDemoAppUIFigure'>
+        <Name>'uiwordcloud Demo App'</Name>
+        <Position>[100 100 640 480]</Position>
+        <Children>
+            <uiwordcloud name='uiwordcloud'>
+                <Position>[15 57 607 410]</Position>
+            </uiwordcloud>
+            <Button name='plotButton'>
+                <ButtonPushedFcn>plotButtonPushed</ButtonPushedFcn>
+                <Position>[522 21 100 22]</Position>
+                <Text>'plot'</Text>
+            </Button>
+        </Children>
+    </UIFigure>
+    <AppDetails>
+        <Name>uiwordcloud Demo App</Name>
+        <Version>1.0</Version>
+    </AppDetails>
+    <InternalData>
+        <AppId>7d605158-9694-4fc4-9802-a5f0da0ebc0f</AppId>
+    </InternalData>
+    <!-- Thumbnail is used by file previewers. To change how the thumbnail is captured or stored, use the App Details dialog box in App Designer. -->
+    <Thumbnail autoCapture='true'>data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAClANwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3WinIu84zT/JHrQBFRUvkj1o8ketAEVFS+SPWjyR60ARUVL5I9aPJHrQBFRUvkj1o8ketAEVMmmjt4JJpW2xxqXZsZwAMk1Y8ketI9skkbI/KsCrAjqDQBkW/iHR7oMYtRtyFJBLNt6Eg9fTaf59xT21vTVSVhdpIImVWEQMh3NnAAUEk8HgelRp4N0KOPy0sEVMAEBm5AVVGeeeFX8RnrVg+HNN2zKIWXzpBIxWRlIYEkFSDlfvN0x1NACR6vp0mdt7ACpIIZwpGCQeDz1BqW2vbW8aZbadJTC2yTYchTjOM1Wk8JaNKXL2mS5JY+YwOSck9ep9fTirljo9npqyLaR+WsjbmGSeenGTwPYUAS0VL5I9aPJHrQBFRUvkj1o8ketAEVFS+SPWjyR60ARUVL5I9aPJHrQBFRUvkj1o8ketAEVFSPHtXOajoAkh+8fpU1Qw/eP0qagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBkv3KgqeX7lQUASQ/eP0qaoYfvH6VNQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAyX7lQVPL9yoKAJIfvH6VNUMP3j9KmoAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAZL9yoKnl+5UFAEkP3j9KmqGH7x+lTUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAMl+5UFTy/cqCgCSH7x+lTVDD94/SpqACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAGS/cqCp5fuVBQBJD94/Spqhh+8fpU1ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADJfuVBU8v3KgoAkh+8fpU1Qw/eP0qagAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBkv3KgqeX7lQUASQ/eP0qaoYfvH6VNQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAyX7lQVPL9yoKAFBK9DS+Y3rTaKAHeY3rR5jetNooAd5jetHmN602igB3mN60eY3rTaKAHeY3rR5jetNooAd5jetHmN602igB3mN60eY3rTaKAHeY3rR5jetNooAd5jetHmN602igB3mN60eY3rTaKAHeY3rR5jetNooAR7oRttZznGcBSf5U37Yv95/+/bf4Uwlo53by3ZWVcFRnpn/ABpfPP8Azxm/75/+vQA77Yv95/8Av23+FH2xf7z/APftv8Kx3sr6WaSQ312is5IRU4C5yBnPpx/nNa3n/wDTGb/vn/69ADxcrI2wOcnsVIz+dOqDc0s0REbqFJJLDHYj+tT0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=</Thumbnail>
+</MATLABApp>

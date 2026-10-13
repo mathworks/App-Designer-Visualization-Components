@@ -8,20 +8,16 @@
 % open, restart it afterward to refresh the Component Library.
 
 componentRoot = fileparts(fileparts(mfilename("fullpath")));
-metadata = jsondecode(fileread( ...
-    fullfile(componentRoot, "resources", "appDesigner.json")));
-componentNames = string({metadata.components.componentName})';
-
-if isempty(which("uipolaraxes"))
-    componentNames = setupPanelWrappedComponents;
-end
+addpath(componentRoot)
+componentNames = setupPanelWrappedComponents;
 
 disp(componentNames)
 
 %% Find the Components in App Designer
-% Open or create an app and look under *My Components (Custom)*. Drag a
-% component onto the canvas, then access it through the property name shown
-% in the Component Browser.
+% Open or create an app and look under *Visualization - Axes & Maps*,
+% *Visualization - Charts*, *Visualization - Image & Volume*, or
+% *Visualization - RF & Antennas*. Drag a component onto the canvas, then
+% access it through the property name shown in the Component Browser.
 
 %% Create a Polar Plot Programmatically
 % Custom components can also be parented to a UI figure from code. The

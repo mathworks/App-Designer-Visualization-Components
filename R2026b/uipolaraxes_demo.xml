@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<MATLABApp schemaVersion='1.0.0' release='R2026b.0' minRelease='R2026b'>
+    <UIFigure name='uipolaraxesDemoAppUIFigure'>
+        <Name>'uipolaraxes Demo App'</Name>
+        <Position>[100 100 640 480]</Position>
+        <Children>
+            <uipolaraxes name='uipolaraxes'>
+                <Position>[32 49 572 413]</Position>
+            </uipolaraxes>
+            <Button name='PlotButton'>
+                <ButtonPushedFcn>PlotButtonPushed</ButtonPushedFcn>
+                <Position>[516 28 100 22]</Position>
+                <Text>'Plot'</Text>
+            </Button>
+        </Children>
+    </UIFigure>
+    <AppDetails>
+        <Name>uipolaraxes Demo App</Name>
+        <Version>1.0</Version>
+    </AppDetails>
+    <InternalData>
+        <AppId>dab0f38c-570e-4a93-8034-e518c3fb7116</AppId>
+    </InternalData>
+    <!-- Thumbnail is used by file previewers. To change how the thumbnail is captured or stored, use the App Details dialog box in App Designer. -->
+    <Thumbnail autoCapture='true'>data:image/jpg;base64,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</Thumbnail>
+</MATLABApp>
